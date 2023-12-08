@@ -1,7 +1,19 @@
 var res = document.getElementById("res");
 
-function printDateTime() {
-    var dateTime = Date();
-    res.innerHTML = dateTime;
-    console.log("button clicked");        
+function getCurrentDate() {
+    var date = new Date();
+    var day = date.toLocaleDateString('en-us',{day:"numeric"});
+    var dayName = date.toLocaleDateString('en-us',{weekday:'long'});
+    var month = date.toLocaleDateString('en-us',{month:"numeric"});
+    var monthName = date.toLocaleString('en-us',{month:'long'});
+    var year = date.toLocaleDateString('en-us',{year:"numeric"});
+    return ([day, dayName, month, monthName, year]);
+}
+
+function showDate() {
+    res.innerHTML = getCurrentDate();
+}
+
+function resetFunc() {
+    res.innerHTML = "..."
 }
