@@ -3,8 +3,11 @@
     --color2: #b80909;
     --color3: #e55b2b;
 }
-header, section, footer {
+header, section {
     padding: 100px 0;
+}
+footer {
+    padding: 30px 0;
 }
 header {
     padding: 50px 0;
