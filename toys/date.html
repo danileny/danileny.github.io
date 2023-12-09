@@ -10,26 +10,35 @@
 </head>
 <body>
     <header>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="/pages/misc.html">Misc</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Date</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <section>
-        <a href="/index.html">Back to main</a><br>
-        <a href="/pages/misc.html">Back to misc</a><br>        
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p id="res" class="script_result">Push the button</p>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p id="res" class="script_result">Push the button</p>
                 </div>
-                <div class="row">
-                    <div class="col-6 text-center text-uppercase">
-                        <button type="button" class="btn btn-itd btn-lg text-uppercase" onclick="showDate()">Get date</button>                        
-                    </div>
-                    <div class="col-6 text-center text-uppercase">
-                        <button type="button" class="btn btn-itd btn-lg text-uppercase" onclick="resetDate()">Reset date</button>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-center text-uppercase">
+                    <button type="button" class="btn btn-itd btn-lg text-uppercase" onclick="showDate()">Get date</button>                        
                 </div>
-            </div>        
+                <div class="col-6 text-center text-uppercase">
+                    <button type="button" class="btn btn-itd btn-lg text-uppercase" onclick="resetDate()">Reset date</button>
+                </div>
+            </div>
+        </div>        
     </section>
     <footer>
 
