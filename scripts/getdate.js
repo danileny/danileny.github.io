@@ -14,6 +14,6 @@ function showDate() {
     res.innerHTML = getCurrentDate();
 }
 
-function resetFunc() {
+function resetDate() {
     res.innerHTML = "..."
 }
