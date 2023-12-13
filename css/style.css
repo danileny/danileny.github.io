@@ -1,83 +1,71 @@
 :root {
-    --color1: #201e1e;
-    --color2: #b80909;
-    --color3: #e55b2b;
-    --color4: #1f7586;
-    --color5: #bddbf3;
+    --color1: #c0ebff;
+    --color2: #06bee1;
+    --color3: #1768ac;
+    --color4: #2541b2;
+    --color5: #03256c;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header, footer {
-    padding-top: 12px;
-    padding-bottom: 24px;
-    background: linear-gradient(60deg,  var(--color4) 0%,var(--color5) 80%);
-}
-section {
-    padding: 50px;
-    min-height: 100%;    
-}
-.about {
-    background-color: antiquewhite;
-}
-.itd_circle {
-    margin: 0 auto 15px;
-    width: 70px;
-    height: 70px;
-    border: 3px solid var(--color2);
-    border-radius: 39%;
-    border-color: var(--color2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn-itd {
-    display: block;
-    width: 200px;
-    height: 50px;
-    margin: 10px auto;
-    padding: 8px 30px;    
-    color: var(--bs-white);
-    background-color: var(--color2);
-}
-.btn-itd:hover {
-    color: var(--bs-white);
+
+body {
     background-color: var(--color1);
+    margin: 0;
+    padding: 0;    
 }
-.embed-container { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+    /*overflow: hidden;    */
+    background-color: var(--color2);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-.embed-container iframe, .embed-container object, .embed-container embed {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+
+li { 
+    float: left;    
 }
-.color1 {
+
+li a {
+    display: block;
+    color: var(--color5);
+    text-align: center;
+    padding: 10px 20px;    
+    text-decoration: none;
+    text-transform: uppercase;    
+}
+
+li a.active {
+    background-color: var(--color3);
     color: var(--color1);
 }
-.color2 {
-    color: var(--color2);
+
+li a:hover:not(.active) {
+    background-color: var(--color3);
+    color: var(--color1);
 }
-.bg1 {
-    background-color: var(--color1);
-}
-.bg2 {
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
     background-color: var(--color2);
+    min-width: 160px;
+    z-index: 1;
 }
-.line {
-    width: 100px;
-    height: 3px;
-    background-color: var(--color1);
-    margin: 15px auto 30px;
+  
+.dropdown-content a {
+    color: var(--color5);
+    padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
-.script_result {    
-    background-color:var(--color2);
-    color: white;
-    text-align: center;
-    font-size: xx-large;
-    margin-top: 10px;
-    margin-bottom: 10px;   
+  
+.dropdown-content a:hover {
+    background-color: var(--color3);}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }

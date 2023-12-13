@@ -5,50 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/src/icon.png">
   <title>Profile</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/misc.html">Misc</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>    
+      <nav>
+        <ul>
+          <li><a href="/pages/home.html">Home</a></li>
+          <li><a class="active" href="">Profile</a></li>
+          <li style="float: right;"><a href="/pages/contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="/pages/misc.html" class="dropbtn">Miscellaneous</a>
+            <div class="dropdown-content">
+              <a href="#">Geolocation</a>
+              <a href="#">Local date</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero quibusdam alias velit est cupiditate placeat enim minus dolor doloremque rem iusto hic ipsum vero accusantium ad vitae, laudantium soluta?
-        </div>
-      </div>
-    </div>
+    
   </section>
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <a href="/index.html">index</a>
-        </div>
-      </div>
-    </div>
+  
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
