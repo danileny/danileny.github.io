@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 600px;
+            background-image: url("/src/clockbackground.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        div {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+            color: rgb(255, 247, 211);
+            border-radius: 20px;
+            background: transparent;
+            backdrop-filter: blur(14px);
+            margin-top: 20%;
+            margin-left: 400px;
+            margin-right: 400px;;
+        }
+    </style> 
+</head>
+<body>    
+    <div id="res">Result</div>
+    <script>
+        (
+            function () {
+                var res = document.getElementById("res");
+                
+                function getTime (time) {
+                    time.innerHTML = new Date().toLocaleTimeString();
+                }
+                
+                setInterval(function () {
+                    getTime(res);
+                }, 1000);
+            }()
+        );
+    </script>
+</body>
+</html>
